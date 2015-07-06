@@ -16,6 +16,7 @@ class MyList : public QObject
     Q_OBJECT
 protected:
     ListNode *first;
+    int k;
 public:
     explicit MyList(QObject *parent = 0);
 
@@ -25,7 +26,13 @@ public:
     MyListData removeLast();
     MyListData getItem(int index);
     int count();
+    int getk();
 
+public slots:
+    void setcount();
+
+signals:
+    void countChanged(int newcount);
 };
 
 #endif // MYLIST_H

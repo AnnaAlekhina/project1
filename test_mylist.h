@@ -18,6 +18,7 @@ private slots:
     void addLast();
     void count();
     void removeLast();
+
 };
 
 #endif // TEST_MYLIST_H

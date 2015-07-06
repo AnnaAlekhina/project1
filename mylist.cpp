@@ -1,4 +1,5 @@
 #include "mylist.h"
+#include "obr.h"
 
 MyList::MyList(QObject *parent) : QObject(parent)
 {
@@ -27,6 +28,7 @@ void MyList::addLast(MyListData newData)
     } else {
         first = t;
     }
+    emit countChanged(count());
 }
 
 MyListData MyList::getItem(int index)
@@ -75,6 +77,7 @@ ListNode*q=first;
              }
 }
      else  throw "empty";
+ emit countChanged(count());
  }
 //HELLO
 //jggg
