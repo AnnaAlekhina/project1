@@ -11,7 +11,12 @@ public:
 
 public slots:
     void countChanged(int newcount);
+<<<<<<< HEAD
 
+=======
+signals:
+    void setcount();
+>>>>>>> 501033913c4730ab22707e43b794493f6a751b91
 };
 
 #endif // OBR_H
