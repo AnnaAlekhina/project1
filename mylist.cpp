@@ -55,7 +55,6 @@ int MyList::count()
        int i=0;
        while(q){q=q->next;i++;}
        return i;
-<<<<<<< HEAD
 }
 
 int MyList::getk()
@@ -68,9 +67,6 @@ void MyList::setcount()
     k=count();
 }
 
-=======
- }
->>>>>>> 501033913c4730ab22707e43b794493f6a751b91
 
  MyListData MyList:: removeLast(){
 if(first){
@@ -94,5 +90,4 @@ ListNode*q=first;
      else  throw "empty";
  emit countChanged(count());
  }
-//HELLO
-//jggg
+
